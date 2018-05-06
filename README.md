@@ -24,4 +24,4 @@ When you’re ready to deploy to production, create a minified bundle with ```np
 
 ## License
 
-MIT © [Jeferson Farias Calazans](http://calazans10.com)
+Create Personal React App is open source software [licensed as MIT](https://github.com/calazans10/create-personal-react-app/blob/master/LICENSE).
