@@ -5,7 +5,8 @@ A thin wrapper around Facebook's [create-react-app](https://github.com/facebook/
 ## Quick Overview
 
 ```
-npx create-personal-react-app my-app
+npm install -g create-react-app create-personal-react-app
+create-personal-react-app my-app
 cd my-app
 npm start
 ```
