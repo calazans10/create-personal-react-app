@@ -9,7 +9,6 @@ const appDirectory = `${process.cwd()}/${appName}`;
 const currentDirectory = path.resolve(__dirname);
 
 const dependencies = [
-  'bourbon',
   'classnames',
   'history',
   'node-sass-chokidar',
