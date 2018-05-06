@@ -26,7 +26,7 @@ const dependencies = [
 const devDependencies = [
   'eslint-config-airbnb',
   'eslint-config-prettier',
-  'eslint-plugin-jsx-a11y',
+  'eslint-plugin-jsx-a11y@5.1.1',
   'eslint-plugin-prettier',
   'prettier',
   'redux-devtools-extension',
