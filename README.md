@@ -1,5 +1,8 @@
 # Create Personal React App
 
+[![npm package](https://img.shields.io/npm/v/create-personal-react-app.svg)](https://www.npmjs.com/package/create-personal-react-app)
+[![npm package](https://img.shields.io/npm/dm/create-personal-react-app.svg)](https://www.npmjs.com/package/create-personal-react-app)
+
 A thin wrapper around Facebook's [create-react-app](https://github.com/facebook/create-react-app) inspired by [@Chris Patty's](https://github.com/chrisjpatty) [blog post](https://blog.cloudboost.io/extending-create-react-app-to-make-your-own-app-generator-5d7b1ddc246).
 
 ## Quick Overview
