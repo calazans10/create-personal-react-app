@@ -1,0 +1,31 @@
+{
+  "name": "create-personal-react-app",
+  "version": "1.0.0",
+  "description": "A thin wrapper around Facebook's create-react-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/calazans10/create-personal-react-app.git"
+  },
+  "keywords": [
+    "react",
+    "zero-configuration",
+    "build-tools"
+  ],
+  "author": "Jeferson Farias Calazans <calazans10@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calazans10/create-personal-react-app/issues"
+  },
+  "homepage": "https://github.com/calazans10/create-personal-react-app#readme",
+  "dependencies": {
+    "colors": "^1.2.4",
+    "shelljs": "^0.8.1"
+  },
+  "bin": {
+    "create-personal-react-app": "index.js"
+  }
+}
