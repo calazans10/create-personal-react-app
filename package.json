@@ -12,6 +12,9 @@
   },
   "keywords": [
     "react",
+    "redux",
+    "redux-saga",
+    "react-router-v4",
     "zero-configuration",
     "build-tools"
   ],
