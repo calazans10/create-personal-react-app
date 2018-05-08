@@ -1,5 +1,6 @@
 # Create Personal React App
 
+[![dependencies Status](https://david-dm.org/calazans10/create-personal-react-app/status.svg)](https://david-dm.org/calazans10/create-personal-react-app)
 [![npm package](https://img.shields.io/npm/v/create-personal-react-app.svg)](https://www.npmjs.com/package/create-personal-react-app)
 [![npm package](https://img.shields.io/npm/dm/create-personal-react-app.svg)](https://www.npmjs.com/package/create-personal-react-app)
 
@@ -15,15 +16,15 @@ npm start
 ```
 
 Then open [http://localhost:3000/](http://localhost:3000/) to see your app.
-When you’re ready to deploy to production, create a minified bundle with ```npm run build```.
+When you are ready to deploy to production, create a minified bundle with `npm run build`.
 
 ## Contribute
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Submit a pull request
+1.  Fork it
+2.  Create your feature branch (`git checkout -b my-new-feature`)
+3.  Commit your changes (`git commit -am 'Add some feature'`)
+4.  Push to the branch (`git push origin my-new-feature`)
+5.  Submit a pull request
 
 ## License
 
