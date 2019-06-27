@@ -1,4 +1,4 @@
-import { getUsers, getSelectedUser } from './index';
+import { getUsers } from './index';
 
 describe('user selectors', () => {
   const users = [
@@ -30,15 +30,10 @@ describe('user selectors', () => {
   const state = {
     user: {
       users,
-      selectedUser: {},
     },
   };
 
   it('should create a selector that returns if a loading is visible', () => {
     expect(getUsers(state)).toEqual(users);
-  });
-
-  it('should create a selector that returns the selected user', () => {
-    expect(getSelectedUser(state)).toEqual({});
   });
 });

@@ -1,3 +1,5 @@
+@import 'styles/utilities';
+
 .loading {
   display: flex;
   position: fixed;
@@ -7,7 +9,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.75) url(../../../../../images/loader.gif) center center
+    no-repeat;
+  background-size: rem(66) rem(66);
   color: #485257;
   z-index: 999;
 }

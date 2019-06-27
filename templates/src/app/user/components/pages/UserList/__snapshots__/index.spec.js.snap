@@ -8,6 +8,5 @@ exports[`UserList renders without crashing 1`] = `
   >
     <Connect(UserTable) />
   </MainContent>
-  <Connect(UserModal) />
 </Fragment>
 `;

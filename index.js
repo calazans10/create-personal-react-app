@@ -104,7 +104,7 @@ const updateTemplates = async () => {
     shell
       .cd(`${appDirectory}/src`)
       .exec(
-        'find . -type f -not -name "registerServiceWorker.js" -print0 | xargs -0 rm --'
+        'find . -type f -not -name "serviceWorker.js" -print0 | xargs -0 rm --'
       );
     shell.cp("-R", `${currentDirectory}/templates/*`, appDirectory);
     shell.cp("-R", `${currentDirectory}/templates/.*`, appDirectory);

@@ -16,9 +16,6 @@ describe('root reducer', () => {
         loading: {
           isVisible: false,
         },
-        modal: {
-          isVisible: false,
-        },
         snackbar: {
           isVisible: false,
           message: '',
@@ -27,7 +24,6 @@ describe('root reducer', () => {
       },
       user: {
         users: [],
-        selectedUser: {},
       },
     };
     expect(reducer(undefined, {})).toEqual(expectedState);

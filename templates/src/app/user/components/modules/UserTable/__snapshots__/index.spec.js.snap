@@ -9,6 +9,11 @@ exports[`UserTable when there are no users renders nothing 1`] = `
       <th
         className="user-table__title"
       >
+        ID
+      </th>
+      <th
+        className="user-table__title"
+      >
         Nome
       </th>
       <th
@@ -20,11 +25,6 @@ exports[`UserTable when there are no users renders nothing 1`] = `
         className="user-table__title"
       >
         Email
-      </th>
-      <th
-        className="user-table__title"
-      >
-        Ações
       </th>
     </tr>
   </thead>
@@ -50,6 +50,11 @@ exports[`UserTable when there are users renders without crashing 1`] = `
       <th
         className="user-table__title"
       >
+        ID
+      </th>
+      <th
+        className="user-table__title"
+      >
         Nome
       </th>
       <th
@@ -62,17 +67,17 @@ exports[`UserTable when there are users renders without crashing 1`] = `
       >
         Email
       </th>
-      <th
-        className="user-table__title"
-      >
-        Ações
-      </th>
     </tr>
   </thead>
   <tbody>
     <tr
       key="1"
     >
+      <td
+        className="user-table__item"
+      >
+        1
+      </td>
       <td
         className="user-table__item"
       >
@@ -87,16 +92,6 @@ exports[`UserTable when there are users renders without crashing 1`] = `
         className="user-table__item"
       >
         Sincere@april.biz
-      </td>
-      <td
-        className="user-table__item"
-      >
-        <Button
-          onClick={[Function]}
-          type="danger"
-        >
-          Remover
-        </Button>
       </td>
     </tr>
   </tbody>

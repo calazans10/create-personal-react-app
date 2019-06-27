@@ -1,10 +1,8 @@
 import { takeLatest, call, put, delay } from 'redux-saga/effects';
-import { doSuccessGetUsers, doSuccessDeleteUser, doClearUser } from '../actions';
-import { doShowLoading, doHideLoading, doShowSnackbar, doHideModal } from '../../ui/actions';
-import { requestGetUsers, requestDeleteUser } from '../api';
-import { GET_USERS_REQUEST, DELETE_USERS_REQUEST } from '../constants/actionTypes';
-import analyticsEvents from '../../../enum/analyticsEvents';
-import { createAnalyticsEvent } from '../../../lib/analytics';
+import { doSuccessGetUsers } from '../actions';
+import { doShowLoading, doHideLoading, doShowSnackbar } from '../../ui/actions';
+import { requestGetUsers } from '../api';
+import { GET_USERS_REQUEST } from '../constants/actionTypes';
 
 export function* handleRequestGetUsers() {
   try {
@@ -19,24 +17,4 @@ export function* handleRequestGetUsers() {
   }
 }
 
-export function* handleRequestDeleteUser(action) {
-  try {
-    yield put(doShowLoading());
-    yield put(doHideModal());
-    yield call(createAnalyticsEvent, analyticsEvents.deleteUser);
-    const { userId } = action.payload;
-    yield call(requestDeleteUser, userId);
-    yield put(doSuccessDeleteUser(userId));
-    yield put(doClearUser());
-    yield put(doShowSnackbar('Usuário removido com sucesso!', 'success'));
-  } catch (error) {
-    yield put(doShowSnackbar('Não foi possível remover o usuário selecionado!', 'error'));
-  } finally {
-    yield put(doHideLoading());
-  }
-}
-
-export default [
-  takeLatest(GET_USERS_REQUEST, handleRequestGetUsers),
-  takeLatest(DELETE_USERS_REQUEST, handleRequestDeleteUser),
-];
+export default [takeLatest(GET_USERS_REQUEST, handleRequestGetUsers)];

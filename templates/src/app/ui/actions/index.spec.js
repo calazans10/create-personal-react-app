@@ -2,8 +2,6 @@ import {
   doShowLoading,
   doHideLoading,
   doRequestLoading,
-  doShowModal,
-  doHideModal,
   doShowSnackbar,
   doHideSnackbar,
 } from './index';
@@ -11,9 +9,7 @@ import {
   LOADING_SHOW,
   LOADING_HIDE,
   LOADING_REQUEST,
-  MODAL_SHOW,
   SNACKBAR_SHOW,
-  MODAL_HIDE,
   SNACKBAR_HIDE,
 } from '../constants/actionTypes';
 
@@ -37,20 +33,6 @@ describe('ui actions', () => {
       type: LOADING_REQUEST,
     };
     expect(doRequestLoading()).toEqual(expectedAction);
-  });
-
-  it('should create doShowModal action', () => {
-    const expectedAction = {
-      type: MODAL_SHOW,
-    };
-    expect(doShowModal()).toEqual(expectedAction);
-  });
-
-  it('should create doHideModal action', () => {
-    const expectedAction = {
-      type: MODAL_HIDE,
-    };
-    expect(doHideModal()).toEqual(expectedAction);
   });
 
   it('should create doShowSnackbar action', () => {

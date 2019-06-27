@@ -1,17 +1,9 @@
 import { call, put, delay } from 'redux-saga/effects';
 import { cloneableGenerator } from '@redux-saga/testing-utils';
-import { handleRequestGetUsers, handleRequestDeleteUser } from './index';
-import {
-  doRequestGetUsers,
-  doSuccessGetUsers,
-  doClearUser,
-  doRequestDeleteUser,
-  doSuccessDeleteUser,
-} from '../actions';
-import { doShowLoading, doHideLoading, doShowSnackbar, doHideModal } from '../../ui/actions';
-import { requestGetUsers, requestDeleteUser } from '../api';
-import analyticsEvents from '../../../enum/analyticsEvents';
-import { createAnalyticsEvent } from '../../../lib/analytics';
+import { handleRequestGetUsers } from './index';
+import { doRequestGetUsers, doSuccessGetUsers } from '../actions';
+import { doShowLoading, doHideLoading, doShowSnackbar } from '../../ui/actions';
+import { requestGetUsers } from '../api';
 
 describe('user sagas', () => {
   describe('handleRequestGetUsers', () => {
@@ -68,53 +60,6 @@ describe('user sagas', () => {
       it('should display an error message', () => {
         expect(clone.throw(new Error('some error')).value).toEqual(
           put(doShowSnackbar('Não foi possível listar usuários!', 'error'))
-        );
-      });
-
-      it('should dispatch doHideLoading', () => {
-        expect(clone.next().value).toEqual(put(doHideLoading()));
-      });
-    });
-  });
-
-  describe('handleRequestDeleteUser', () => {
-    const userId = 1;
-    const action = doRequestDeleteUser(userId);
-    const generator = cloneableGenerator(handleRequestDeleteUser)(action);
-
-    expect(generator.next().value).toEqual(put(doShowLoading()));
-    expect(generator.next().value).toEqual(put(doHideModal()));
-    expect(generator.next().value).toEqual(call(createAnalyticsEvent, analyticsEvents.deleteUser));
-    expect(generator.next().value).toEqual(call(requestDeleteUser, userId));
-
-    describe('when is success', () => {
-      const clone = generator.clone();
-
-      it('should dispatch doSuccessDeleteUser', () => {
-        expect(clone.next().value).toEqual(put(doSuccessDeleteUser(userId)));
-      });
-
-      it('should dispatch doClearUser', () => {
-        expect(clone.next().value).toEqual(put(doClearUser()));
-      });
-
-      it('should display a success message', () => {
-        expect(clone.next().value).toEqual(
-          put(doShowSnackbar('Usuário removido com sucesso!', 'success'))
-        );
-      });
-
-      it('should dispatch doHideLoading', () => {
-        expect(clone.next().value).toEqual(put(doHideLoading()));
-      });
-    });
-
-    describe('when is not success', () => {
-      const clone = generator.clone();
-
-      it('should display an error message', () => {
-        expect(clone.throw(new Error('some error')).value).toEqual(
-          put(doShowSnackbar('Não foi possível remover o usuário selecionado!', 'error'))
         );
       });
 

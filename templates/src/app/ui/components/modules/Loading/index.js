@@ -9,11 +9,7 @@ export const Loading = ({ isVisible }) => {
     return null;
   }
 
-  return (
-    <div className="loading">
-      <p>Carregando...</p>
-    </div>
-  );
+  return <div className="loading" />;
 };
 
 Loading.propTypes = {

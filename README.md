@@ -165,6 +165,7 @@ Inside that directory, it will generate the initial project structure and instal
     │   └── _utilities.scss
     ├── index.js
     ├── index.scss
+    ├── serviceWorker.js
     └── setupTests.js
 ```
 

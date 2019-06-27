@@ -6,9 +6,6 @@ describe('ui reducer', () => {
       loading: {
         isVisible: false,
       },
-      modal: {
-        isVisible: false,
-      },
       snackbar: {
         isVisible: false,
         message: '',
