@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal when is visible renders without crashing 1`] = `
+<Portal>
+  <div
+    className="modal modal--visible"
+  >
+    <div
+      className="modal__dialog"
+    >
+      <div
+        className="modal__content"
+      >
+        <p>
+          Test
+        </p>
+        <button
+          aria-label="Close modal"
+          className="modal__trigger"
+          onClick={[MockFunction]}
+          type="button"
+        >
+          <span
+            className="visually-hidden"
+          >
+            x
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</Portal>
+`;

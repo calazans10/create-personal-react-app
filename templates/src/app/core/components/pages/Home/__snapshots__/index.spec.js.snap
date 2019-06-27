@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders without crashing 1`] = `
+<Fragment>
+  <MainHeader />
+  <MainContent
+    title=""
+  >
+    <p>
+      Bem-vindo ao Admin. Esta é a página do painel padrão.
+    </p>
+  </MainContent>
+</Fragment>
+`;

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserModal renders without crashing 1`] = `
+<Connect(Modal)
+  onHideModal={[Function]}
+>
+  <div
+    className="user-modal"
+  >
+    <h2
+      className="user-modal__title"
+    >
+      Remover usuário
+    </h2>
+    <p
+      className="user-modal__caption"
+    >
+      Tem certeza que deseja remover o usuário 
+      <strong>
+        Bret
+      </strong>
+      ?
+    </p>
+    <div
+      className="user-modal__actions"
+    >
+      <Button
+        onClick={[Function]}
+        type="default"
+      >
+        Cancelar
+      </Button>
+      <Button
+        onClick={[Function]}
+        type="danger"
+      >
+        Sim
+      </Button>
+    </div>
+  </div>
+</Connect(Modal)>
+`;

@@ -1,0 +1,26 @@
+@import 'styles/utilities';
+
+.user-table {
+  width: 100%;
+  margin-top: rem(16);
+  border-collapse: collapse;
+
+  &__title {
+    padding: rem(12) rem(16);
+    border: rem(1) solid #2f3542;
+    background-color: #57606f;
+    color: #dfe4ea;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    padding: rem(12) rem(16);
+    border: rem(1) solid #2f3542;
+    background-color: #f1f2f6;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}

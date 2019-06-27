@@ -1,0 +1,25 @@
+@import 'styles/utilities';
+
+.user-modal {
+  &__title {
+    margin-bottom: rem(8);
+  }
+
+  &__caption {
+    margin-bottom: rem(16);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .button {
+      width: rem(120);
+
+      &:first-of-type {
+        margin-right: rem(16);
+      }
+    }
+  }
+}

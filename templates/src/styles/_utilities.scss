@@ -1,30 +1,20 @@
-// Variables
-$base-font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif;
-$base-font-size: 16;
-$base-bg-color: #fff;
-
-$breakpoints: (
-  tiny: (min-width: em(320)),
-  small: (min-width: em(450))
-);
-
 // Functions
 @function em($pxval, $base: $base-font-size) {
   @if not unitless($pxval) {
-    $pxval: strip-unit($pxval);
+    $pxval: strip-units($pxval);
   }
   @if not unitless($base) {
-    $base: strip-unit($base);
+    $base: strip-units($base);
   }
   @return ($pxval / $base) * 1em;
 }
 
 @function rem($pxval, $base: $base-font-size) {
   @if not unitless($pxval) {
-    $pxval: strip-unit($pxval);
+    $pxval: strip-units($pxval);
   }
   @if not unitless($base) {
-    $base: strip-unit($base);
+    $base: strip-units($base);
   }
   @return ($pxval / $base) * 1rem;
 }
@@ -43,3 +33,19 @@ $breakpoints: (
     @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+// Variables
+$base-font-size: 16;
+$base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, 'Helvetica Neue', sans-serif;
+
+$base-bg-color: #fff;
+
+$breakpoints: (
+  tiny: (
+    min-width: em(320),
+  ),
+  small: (
+    min-width: em(450),
+  ),
+);

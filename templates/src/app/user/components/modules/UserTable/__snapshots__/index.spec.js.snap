@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserTable when there are no users renders nothing 1`] = `
+<table
+  className="user-table"
+>
+  <thead>
+    <tr>
+      <th
+        className="user-table__title"
+      >
+        Nome
+      </th>
+      <th
+        className="user-table__title"
+      >
+        Usuário
+      </th>
+      <th
+        className="user-table__title"
+      >
+        Email
+      </th>
+      <th
+        className="user-table__title"
+      >
+        Ações
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        className="user-table__item user-table__item--centered"
+        colSpan="4"
+      >
+        Nenhum usuário encontrado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`UserTable when there are users renders without crashing 1`] = `
+<table
+  className="user-table"
+>
+  <thead>
+    <tr>
+      <th
+        className="user-table__title"
+      >
+        Nome
+      </th>
+      <th
+        className="user-table__title"
+      >
+        Usuário
+      </th>
+      <th
+        className="user-table__title"
+      >
+        Email
+      </th>
+      <th
+        className="user-table__title"
+      >
+        Ações
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      key="1"
+    >
+      <td
+        className="user-table__item"
+      >
+        Leanne Graham
+      </td>
+      <td
+        className="user-table__item"
+      >
+        Bret
+      </td>
+      <td
+        className="user-table__item"
+      >
+        Sincere@april.biz
+      </td>
+      <td
+        className="user-table__item"
+      >
+        <Button
+          onClick={[Function]}
+          type="danger"
+        >
+          Remover
+        </Button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

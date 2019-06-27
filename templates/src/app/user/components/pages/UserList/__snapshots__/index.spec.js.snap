@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList renders without crashing 1`] = `
+<Fragment>
+  <MainHeader />
+  <MainContent
+    title="Listagem de Usuários"
+  >
+    <Connect(UserTable) />
+  </MainContent>
+  <Connect(UserModal) />
+</Fragment>
+`;

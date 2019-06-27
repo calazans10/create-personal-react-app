@@ -1,11 +1,9 @@
-import { takeEvery, all } from 'redux-saga/effects';
-import { LOADING_REQUEST } from '../constants/actionTypes';
-import { handleRequestLoading } from './ui';
+import { all } from 'redux-saga/effects';
+import { sagas as uiSagas } from '../app/ui';
+import { sagas as userSagas } from '../app/user';
 
-function* rootSaga() {
-  yield all([
-    takeEvery(LOADING_REQUEST, handleRequestLoading)
-  ]);
+const sagas = [uiSagas, userSagas].reduce((result, array) => result.concat(array), []);
+
+export default function* rootSaga() {
+  yield all(sagas);
 }
-
-export default rootSaga;

@@ -1,10 +1,13 @@
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-import uiReducer from './ui';
+import { connectRouter } from 'connected-react-router';
+import uiReducer from '../app/ui/reducers';
+import userReducer from '../app/user/reducers';
+import history from '../history';
 
 const rootReducer = combineReducers({
-  routerState: routerReducer,
-  uiState: uiReducer,
+  router: connectRouter(history),
+  ui: uiReducer,
+  user: userReducer,
 });
 
 export default rootReducer;

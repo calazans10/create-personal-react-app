@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainHeader renders without crashing 1`] = `
+<header
+  className="main-header"
+>
+  <h1
+    className="main-header__title"
+  >
+    Admin
+  </h1>
+  <MainNavigation />
+</header>
+`;

@@ -1,0 +1,27 @@
+@import 'styles/utilities';
+
+.main-navigation {
+  margin-left: rem(32);
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: rem(16);
+    }
+  }
+
+  &__link {
+    color: #dfe4ea;
+    text-decoration: none;
+
+    &:hover {
+      color: #ced6e0;
+    }
+
+    &--active {
+      color: #ced6e0;
+      font-weight: bold;
+    }
+  }
+}

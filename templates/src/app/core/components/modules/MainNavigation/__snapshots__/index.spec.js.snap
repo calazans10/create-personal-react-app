@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainNavigation renders without crashing 1`] = `
+<nav
+  className="main-navigation"
+>
+  <ul
+    className="main-navigation__list"
+  >
+    <li
+      className="main-navigation__item"
+    >
+      <NavLink
+        activeClassName="main-navigation__link--active"
+        className="main-navigation__link"
+        exact={true}
+        to="/"
+      >
+        Dashboard
+      </NavLink>
+    </li>
+    <li
+      className="main-navigation__item"
+    >
+      <NavLink
+        activeClassName="main-navigation__link--active"
+        className="main-navigation__link"
+        exact={true}
+        to="/users"
+      >
+        Usuários
+      </NavLink>
+    </li>
+  </ul>
+</nav>
+`;
