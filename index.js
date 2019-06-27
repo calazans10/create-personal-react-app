@@ -17,7 +17,6 @@ const dependencies = [
   "normalize.css",
   "prop-types",
   "qs",
-  "react-ga",
   "react-redux",
   "react-router-dom",
   "redux",
@@ -29,7 +28,6 @@ const dependencies = [
 
 const devDependencies = [
   "@redux-saga/testing-utils",
-  "@testing-library/react",
   "enzyme",
   "enzyme-adapter-react-16",
   "enzyme-to-json",
