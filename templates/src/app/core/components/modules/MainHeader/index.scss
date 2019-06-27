@@ -1,0 +1,14 @@
+@import 'styles/utilities';
+
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: rem(16) rem(32);
+  background-color: #2f3542;
+
+  &__title {
+    color: #fff;
+    font-size: rem(28);
+    text-transform: uppercase;
+  }
+}

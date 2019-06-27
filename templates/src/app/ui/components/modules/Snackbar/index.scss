@@ -1,0 +1,42 @@
+@import 'styles/utilities';
+
+.snackbar {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: em(14);
+  font-weight: 700;
+  overflow: hidden;
+
+  &--visible {
+    max-height: auto;
+    padding: rem(20) rem(32);
+  }
+
+  &--hidden {
+    top: -100vh;
+    opacity: 0;
+  }
+
+  &--error {
+    background-color: #e33b15;
+  }
+
+  &--success {
+    background-color: #21d376;
+  }
+
+  &__text {
+    flex-grow: 1;
+  }
+
+  &__close {
+    flex-basis: rem(50);
+    padding: 0;
+    border: none;
+    background: url('../../../../../images/closeicon.svg') center right no-repeat;
+    cursor: pointer;
+  }
+}

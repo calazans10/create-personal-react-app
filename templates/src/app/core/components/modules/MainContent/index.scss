@@ -1,0 +1,11 @@
+@import 'styles/utilities';
+
+.main-content {
+  width: 100%;
+  padding: rem(20) rem(32) rem(80);
+
+  &__title {
+    margin-bottom: rem(16);
+    font-size: rem(36);
+  }
+}

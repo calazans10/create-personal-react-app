@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainContent renders without crashing 1`] = `
+<Fragment>
+  <Connect(Snackbar) />
+  <main
+    className="main-content"
+  >
+    <h1
+      className="main-content__title"
+    >
+      Test
+    </h1>
+    <p>
+      Lorem Ipsum
+    </p>
+  </main>
+</Fragment>
+`;

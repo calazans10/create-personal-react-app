@@ -1,0 +1,5 @@
+export const LOADING_SHOW = 'LOADING_SHOW';
+export const LOADING_HIDE = 'LOADING_HIDE';
+export const LOADING_REQUEST = 'LOADING_REQUEST';
+export const SNACKBAR_SHOW = 'SNACKBAR_SHOW';
+export const SNACKBAR_HIDE = 'SNACKBAR_HIDE';

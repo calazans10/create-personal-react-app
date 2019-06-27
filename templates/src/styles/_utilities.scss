@@ -1,14 +1,12 @@
-// Variables
-$base-font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif;
-$base-font-size: 16;
-$base-bg-color: #fff;
-
-$breakpoints: (
-  tiny: (min-width: em(320)),
-  small: (min-width: em(450))
-);
-
 // Functions
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
 @function em($pxval, $base: $base-font-size) {
   @if not unitless($pxval) {
     $pxval: strip-unit($pxval);
@@ -29,6 +27,10 @@ $breakpoints: (
   @return ($pxval / $base) * 1rem;
 }
 
+@function lh($pxval) {
+  @return strip-unit(em($pxval));
+}
+
 // Mixins
 @mixin respond-to($breakpoint) {
   $raw-query: map-get($breakpoints, $breakpoint);
@@ -43,3 +45,19 @@ $breakpoints: (
     @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+// Variables
+$base-font-size: 16;
+$base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, 'Helvetica Neue', sans-serif;
+
+$base-bg-color: #fff;
+
+$breakpoints: (
+  tiny: (
+    min-width: em(320),
+  ),
+  small: (
+    min-width: em(450),
+  ),
+);

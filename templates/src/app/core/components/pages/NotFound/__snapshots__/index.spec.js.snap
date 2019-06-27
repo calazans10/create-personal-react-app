@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound renders without crashing 1`] = `
+<MainContent
+  title="Página não encontrada"
+>
+  <p>
+    Não foi possível encontrar uma página com o caminho informado.
+  </p>
+</MainContent>
+`;

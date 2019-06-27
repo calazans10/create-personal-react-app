@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snackbar renders without crashing 1`] = `
+<div
+  className="snackbar snackbar--error snackbar--visible"
+>
+  <div
+    className="snackbar__text"
+  >
+    A message
+  </div>
+  <button
+    aria-label="Close"
+    className="snackbar__close"
+    onClick={[MockFunction]}
+    type="button"
+  />
+</div>
+`;
