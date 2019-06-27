@@ -315,14 +315,14 @@ Your app is ready to be deployed.
   )(Home);
   ```
 
-  ## Contribute
+## Contribute
 
-  1.  Fork it
-  2.  Create your feature branch (`git checkout -b my-new-feature`)
-  3.  Commit your changes (`git commit -am 'Add some feature'`)
-  4.  Push to the branch (`git push origin my-new-feature`)
-  5.  Submit a pull request
+1.  Fork it
+2.  Create your feature branch (`git checkout -b my-new-feature`)
+3.  Commit your changes (`git commit -am 'Add some feature'`)
+4.  Push to the branch (`git push origin my-new-feature`)
+5.  Submit a pull request
 
-  ## License
+## License
 
-  Create Personal React App is open source software [licensed as MIT](https://github.com/calazans10/create-personal-react-app/blob/master/LICENSE).
+Create Personal React App is open source software [licensed as MIT](https://github.com/calazans10/create-personal-react-app/blob/master/LICENSE).
