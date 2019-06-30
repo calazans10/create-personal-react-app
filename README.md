@@ -1,5 +1,6 @@
 # Create Personal React App
 
+[![Build Status](https://travis-ci.org/calazans10/create-personal-react-app.svg?branch=master)](https://travis-ci.org/calazans10/create-personal-react-app)
 [![dependencies Status](https://david-dm.org/calazans10/create-personal-react-app/status.svg)](https://david-dm.org/calazans10/create-personal-react-app)
 [![npm package](https://img.shields.io/npm/v/create-personal-react-app.svg)](https://www.npmjs.com/package/create-personal-react-app)
 [![npm package](https://img.shields.io/npm/dm/create-personal-react-app.svg)](https://www.npmjs.com/package/create-personal-react-app)
