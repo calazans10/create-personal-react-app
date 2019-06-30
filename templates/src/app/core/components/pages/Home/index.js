@@ -14,7 +14,7 @@ export const Home = ({ onRequestLoading }) => {
     <>
       <MainHeader />
       <MainContent>
-        <p>Bem-vindo ao Admin. Esta é a página do painel padrão.</p>
+        <p>Bem-vindo ao Admin. Esta é a página inicial do painel administrativo.</p>
       </MainContent>
     </>
   );
