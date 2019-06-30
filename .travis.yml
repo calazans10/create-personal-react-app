@@ -10,4 +10,5 @@ deploy:
     secure: NQU1wqbgyZTIqFa9KFisUWGWnTj3Isv50ACRuwwQJ2sUto+iQyJjWDBgdJ0nQ3fSxEWcpojqRQUU92p0YyUjVKxW6DFXHkUHDers/8dbM+u4D6bVfaWtKoX6K4KWmSOw3qz/3gaj+S859yn8LEXSRs36i5jZG6M74fpnG18sWa2PYyADhMhtvJE/Hpq8EftCDYcPfIEMqQsnuf6qNfY8QwXY9h0ijdBUT+nCB25Hs8D4y/QjlDQqwH8b3DkmNCIzCFfC6XcGanI8Z2xBX8gY0XIya71TLawXN8nDJWEYWOqcL7LXyAvsGN6zWXHho1N+Q6nDBCJfLS7gGgmKFclZShaRUI5Oxy4mmTEzb0WetQ0B1loIscuWAmyD3pNuiA/yzM0dQSIXEoqC5fIEb4usByZ7tnqBO1CBs5yEqCOXOmrxUOex4Ewgcd9z8zw/uGF3DYf8I3PFi6lwAbiqbC/idwWMhLBowyiwbso6a5I5Ysg+Xx8wSZn6qkfuwDKurQXpmGCGzWlDjO/QW3YMYmBqjzQPmRw9BUqccz3t5JM5ohV5Zrz9+MeWotj5Lmv2/icqVsdujwD4N6/1I3x3RjL5E8vgd+GNSRMCqlqRN3BF2iuVuXB/zFHy7fq6jh7zL0Vrjtgm7KUtbu1jc+D7GxOACWJOI4TSTa3qpIhyAYelPTk=
   on:
     tags: true
-    repo: master
+    repo: calazans10/create-personal-react-app
+    branch: master
