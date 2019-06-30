@@ -1,6 +1,6 @@
 {
   "name": "create-personal-react-app",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A thin wrapper around Facebook's create-react-app",
   "license": "MIT",
   "repository": "calazans10/create-personal-react-app",
